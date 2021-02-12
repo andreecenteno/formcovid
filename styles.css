@@ -7,8 +7,8 @@ body{
     align-items: center;
 }
 header{
-    width: 70%;
-    height: 10%;
+    width: 600px;
+    height: 100px;
     background-color: rgb(151, 186, 252);
     padding: 20px;
     display: flex;
@@ -18,7 +18,7 @@ header{
         color: rgb(22, 18, 18);
     }
 form{
-    width: 70%;
+    width: 600px;
     height: 55%;
     background-color: cornflowerblue;
     color: rgb(225, 231, 231);
