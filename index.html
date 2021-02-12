@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vacunación COVID-19</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Vacunación COVID-19</h1>
+    </header>
+    <form action="">
+        <h2>Bienvenido(a):</h2>
+        <p>Porfavor ingrese a la plataforma con su No. de DNI y la fecha de emision.</p>
+
+        <label for="dni">Numero de DNI:</label>
+        <input type="text" id="dni" placeholder="Ingrese su DNI" name="dni"><br>
+
+        <label for="fecha-emision">Fecha de emision de su DNI:</label>
+        <input type="date" id="fecha-emision" name="fecha-emision"><br>
+
+        <label for="nombre-padre">Ingrese el segundo nombre de su padre:</label>
+        <input type="text" placeholder="Nombre de padre" name="nombre-padre" id="nombre-padre"><br>
+
+        <label for="nombre-madre">Ingrese el primer nombre de su madre:</label>
+        <input type="text" placeholder="Nombre de madre" id="nombre-madre" name="nombre-madre"><br>
+
+        <h3>Informacion del Candidato:</h3>
+
+        <label for="dni-candidato">No. DNI del Candidato:</label>
+        <input type="text" placeholder="Ingrese su DNI" name="dni-candidato" id="dni-candidato"><br>
+
+        <label for="nombre-candidato">Nombre completo:</label>
+        <input type="text" placeholder="Nombre completo" name="nombre-candidato" id="nombre-candidato"><br>
+
+        <label for="nacimiento-candidato">Fecha de Nacimiento:</label>
+        <input type="date" id="nacimiento-candidato" name="nacimiento-candidato"><br>
+
+        <label for="sexo">Sexo:</label>
+        <select name=sexo" id="sexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select>
+
+        <label for="telefono">Tlf:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-51]{2}-[0-9]{9}" placeholder="51-xxxxxxxxx" required><br>
+
+        <label for="seguro-salud">Seguro de Salud:</label>
+        <input type="text" id="seguro-salud" name="seguro-salud" placeholder="Nombre Seguro de Salud">
+
+        <p>
+            ¿Desea vacunarse contra la COVID-19? <br>
+            <label for="si"><input type="radio" id="si" name="autorizacion">Si</label>
+            <label for="no"><input type="radio" id="no" name="autorizacion">No</label>
+        </p>
+
+        <label for="condiciones"><input type="checkbox" id="condiciones" name="condiciones">He leído y acepto las condiciones establecidas en la cláusula de protección de datos personales.</label><br><br>
+
+        <input type="button" onclick="alert('Su solicitud ha sido enviada')" value="Enviar">
+        <input type="reset" value="Volver">
+    </form>
+</body>
+</html>
